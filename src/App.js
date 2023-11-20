@@ -12,8 +12,8 @@ import { setDataProduct } from './redux/productSlice';
 import Menu from './page/Menu';
 import Cart from './page/Cart';
 
-
-export const url="http://localhost:8000";
+export const url="https://ecommerce-backend-c70h.onrender.com"
+// export const url="http://localhost:8000";
 
 
 function App() {

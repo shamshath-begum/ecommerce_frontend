@@ -8,6 +8,8 @@ function Cart() {
 
     const totalPrice=productCartItem.reduce((acc,curr)=>acc+parseInt(curr.total),0)
     const totalqty=productCartItem.reduce((acc,curr)=>acc+parseInt(curr.qty),0)
+
+
   return <>
 <div>
     <h2 style={{textAlign:"center"}}>Your Cart Items</h2>

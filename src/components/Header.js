@@ -22,6 +22,13 @@ function Header() {
 const userData=useSelector((state)=>state)
 console.log(userData.user.email)
 
+const productCartItem=useSelector((state)=>state.product.cartItem)
+console.log(productCartItem)
+
+let handleClick = ()=>{
+
+}
+
   const dispatch=useDispatch()
   const handleShowMenu = () => {
     setShowMenu((preve) => !preve);
@@ -44,7 +51,16 @@ console.log(userData.user.email)
           <Nav className="right">
             <Link to="/" className="home">Home</Link>
             <Link to='/menu/65578b9c1f25de835f2b8575'>Menu</Link>
-  
+            
+
+            <Dropdown>
+                <Dropdown.Toggle>Filter Product
+                    <Dropdown.Menu>
+                        <p onClick={handleClick}>Price</p>
+                        <p>Category</p>
+                    </Dropdown.Menu>
+                </Dropdown.Toggle>
+            </Dropdown>
 
             <Dropdown alignRight>
               <Dropdown.Toggle variant="primary">
